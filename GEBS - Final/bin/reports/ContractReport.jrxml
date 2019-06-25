@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ContractReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5141dfc4-cbff-47da-855e-f0f8ef87b0bc">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<queryString language="SQL">
+		<![CDATA[select * from contracts]]>
+	</queryString>
+	<field name="ContractNo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="ContractNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="contracts"/>
+	</field>
+	<field name="ContractID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ContractID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="contracts"/>
+	</field>
+	<field name="CustomerID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CustomerID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="contracts"/>
+	</field>
+	<field name="CustomerName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CustomerName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="contracts"/>
+	</field>
+	<field name="ContractType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ContractType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="contracts"/>
+	</field>
+	<field name="AcceptedDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="AcceptedDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="contracts"/>
+	</field>
+	<field name="StartDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="StartDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="contracts"/>
+	</field>
+	<field name="EndDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="EndDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="contracts"/>
+	</field>
+	<field name="Cost" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="Cost"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="contracts"/>
+	</field>
+	<field name="Description" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Description"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="contracts"/>
+	</field>
+	<group name="ContractNo">
+		<groupExpression><![CDATA[$F{ContractNo}]]></groupExpression>
+	</group>
+	<group name="ContractID">
+		<groupExpression><![CDATA[$F{ContractID}]]></groupExpression>
+	</group>
+	<group name="CustomerID">
+		<groupExpression><![CDATA[$F{CustomerID}]]></groupExpression>
+	</group>
+	<group name="CustomerName">
+		<groupExpression><![CDATA[$F{CustomerName}]]></groupExpression>
+	</group>
+	<group name="ContractType">
+		<groupExpression><![CDATA[$F{ContractType}]]></groupExpression>
+	</group>
+	<group name="AcceptedDate">
+		<groupExpression><![CDATA[$F{AcceptedDate}]]></groupExpression>
+	</group>
+	<group name="StartDate">
+		<groupExpression><![CDATA[$F{StartDate}]]></groupExpression>
+	</group>
+	<group name="EndDate">
+		<groupExpression><![CDATA[$F{EndDate}]]></groupExpression>
+	</group>
+	<group name="Cost">
+		<groupExpression><![CDATA[$F{Cost}]]></groupExpression>
+	</group>
+	<group name="Description">
+		<groupExpression><![CDATA[$F{Description}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="219" y="22" width="100" height="30" uuid="cd7a4924-6f9d-4c4b-bd7c-f68d8e4c005c"/>
+				<text><![CDATA[Contract Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="119" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="139" y="1" width="82" height="30" uuid="e907450d-bc01-4d0d-ad2e-e8a089a912f5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e0944982-066c-4410-8003-e1c7a4d74baf"/>
+				</reportElement>
+				<text><![CDATA[ContractType]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="223" y="0" width="78" height="30" uuid="b932314f-3228-4414-b21e-88df0c3077c2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8fa7454d-f199-4997-b534-68f4a4941932"/>
+				</reportElement>
+				<text><![CDATA[AcceptedDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="2" width="70" height="30" uuid="a3ffe13d-d781-496d-a87d-664ee9a18ff6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a36338f6-1af5-42a5-b901-2a4ec4854d58"/>
+				</reportElement>
+				<text><![CDATA[StartDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="375" y="0" width="60" height="30" uuid="d6c31253-7f48-4ab2-93b1-7e4517d3e34d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a1f06ed-c818-4066-a998-c945f37d591b"/>
+				</reportElement>
+				<text><![CDATA[EndDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="1" width="112" height="30" uuid="137063eb-414e-48fd-af00-910f6fb4bd18">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6be2a930-7f23-46ce-b189-2280cf690f66"/>
+				</reportElement>
+				<text><![CDATA[Cost]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="1" width="61" height="30" uuid="901ca892-229d-45ec-bcfb-e9f5b20fbd43">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="60f82dd5-680f-41df-a9d7-ca56e80bc33e"/>
+				</reportElement>
+				<text><![CDATA[ContractNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="0" width="76" height="30" uuid="0b14fb75-44b3-4f72-9ef6-f345d5e98871">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38ad24ed-80a6-402f-92eb-2f86190a77d6"/>
+				</reportElement>
+				<text><![CDATA[ContractID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="2" width="61" height="30" uuid="ec297f3d-8609-44dc-b091-039726a3ecef">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="60f82dd5-680f-41df-a9d7-ca56e80bc33e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ContractNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="4" width="82" height="30" uuid="387f144c-c00c-4c29-b8e4-66350d0e0388">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e0944982-066c-4410-8003-e1c7a4d74baf"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ContractType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="223" y="3" width="78" height="30" uuid="f0a865ec-9fef-493b-909b-f7a4a41ef5fe">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8fa7454d-f199-4997-b534-68f4a4941932"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{AcceptedDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="303" y="3" width="70" height="30" uuid="c1bc264c-e191-4374-8227-55d93e8ccb09">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a36338f6-1af5-42a5-b901-2a4ec4854d58"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{StartDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="3" width="60" height="30" uuid="21e251f1-5682-4cc4-8c26-cfd7d873f73c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a1f06ed-c818-4066-a998-c945f37d591b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{EndDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="438" y="4" width="112" height="30" uuid="4a65162a-8ec4-4d3d-a0b3-8c1dbf056e7e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6be2a930-7f23-46ce-b189-2280cf690f66"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Cost}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="0" width="76" height="30" uuid="b11c5d62-b0cc-462c-be21-8a40fafa42c2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38ad24ed-80a6-402f-92eb-2f86190a77d6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ContractID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

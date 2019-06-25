@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<TilePane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="931.0" prefWidth="1654.0" tileAlignment="TOP_CENTER" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane>
+         <TilePane.margin>
+            <Insets top="50.0" />
+         </TilePane.margin>
+         <children>
+            <Label fx:id="header" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="-5.0" prefHeight="198.0" prefWidth="1570.0" text="          Supplier Management" textAlignment="CENTER">
+               <font>
+                  <Font size="72.0" />
+               </font>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+               <effect>
+                  <Glow level="0.6" />
+               </effect>
+            </Label>
+            <ImageView fitHeight="175.0" fitWidth="355.0" layoutX="100.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="100.0">
+               <image>
+                  <Image url="@resources/GEBS%20Final.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" prefHeight="188.0" prefWidth="1584.0" TilePane.alignment="CENTER">
+         <children>
+            <Button fx:id="search_supplier" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#changeScenetoSearchSupplier" prefHeight="155.0" prefWidth="350.0" text="Search Suppliers" textAlignment="JUSTIFY">
+               <HBox.margin>
+                  <Insets left="160.0" right="100.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="add_supplier" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#changeScenetoAddSupplier" prefHeight="155.0" prefWidth="350.0" text="Add Supplier">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+         </children>
+         <TilePane.margin>
+            <Insets right="100.0" top="50.0" />
+         </TilePane.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="117.0" prefWidth="1598.0">
+         <padding>
+            <Insets bottom="50.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER" prefHeight="188.0" prefWidth="1584.0">
+               <children>
+                  <Button fx:id="delete_supplier" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#changeScenetoDeleteSupplier" prefHeight="155.0" prefWidth="350.0" text="Delete Supplier">
+                     <HBox.margin>
+                        <Insets left="5.0" right="100.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/minus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="update_supplier" contentDisplay="TOP" mnemonicParsing="false" onAction="#changeScenetoUpdateSupplier" prefHeight="155.0" prefWidth="350.0" text="Update Supplier">
+                     <graphic>
+                        <ImageView fitHeight="77.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/update.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" top="40.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+      <Button fx:id="viewAll_supplier" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#changeScenetoViewAll" prefHeight="138.0" prefWidth="802.0" text="ViewAll Suppliers">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/viewAll.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <TilePane.margin>
+            <Insets left="55.0" />
+         </TilePane.margin>
+      </Button>
+   </children>
+</TilePane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1050.0" prefWidth="1920.0" style="-fx-background-color: #212F3D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfitController">
+   <children>
+      <AnchorPane accessibleRole="IMAGE_VIEW" layoutY="52.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="931.0" prefWidth="258.0" scaleShape="false" style="-fx-background-color: #34495E;">
+         <children>
+            <Button fx:id="homeButton" layoutX="-1.0" layoutY="157.0" mnemonicParsing="false" onAction="#homeScreen" prefHeight="80.0" prefWidth="258.0" text="Home">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="1.0" layoutY="237.0" mnemonicParsing="false" onAction="#FinanceScreen" prefHeight="80.0" prefWidth="258.0" style="-fx-background-color: #4b5259;" text="Finance">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f56c2d" height="80.0" layoutX="-2.0" layoutY="717.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+            <ImageView fitHeight="145.0" fitWidth="223.0" layoutX="18.0">
+               <image>
+                  <Image url="@GEBS%20Final%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="259.0" layoutY="45.0" prefHeight="931.0" prefWidth="1661.0" style="-fx-background-color: #edf1f2;">
+         <children>
+            <AnchorPane prefHeight="80.0" prefWidth="1654.0">
+               <children>
+                  <Button layoutX="576.0" mnemonicParsing="false" onAction="#FinanceScreen" prefHeight="80.0" prefWidth="176.0" style="-fx-background-color: #f56c2d;" text="Profit Analysis">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="400.0" mnemonicParsing="false" onAction="#FinanceScreen" prefHeight="80.0" prefWidth="176.0" text="Transactions">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <BarChart fx:id="BarChart" barGap="2.0" layoutX="137.0" layoutY="145.0" legendSide="TOP" prefHeight="656.0" prefWidth="898.0" title="Revenue">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="Amount(Rupees)" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Button fx:id="btnLoad" layoutX="277.0" layoutY="825.0" mnemonicParsing="false" onAction="#calculate" text="Calculate" />
+            <Label fx:id="profitResulttxt" layoutX="658.0" layoutY="811.0" text="Not calculated">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+            <Text layoutX="493.0" layoutY="833.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overall Revenue:" wrappingWidth="156.3828125">
+               <font>
+                  <Font size="19.0" />
+               </font></Text>
+            <ChoiceBox fx:id="monthChoice" layoutX="118.0" layoutY="825.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="777.0" layoutY="1002.0" prefHeight="28.0" prefWidth="482.0" text="General Engineering &amp; Business Services (Pte) Ltd" textFill="#f56c2d">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="1861.0" layoutY="6.0" mnemonicParsing="false" onAction="#ExitWindow" prefHeight="7.0" prefWidth="37.0" text="X" />
+      <Button fx:id="logOutButton" layoutX="1760.0" layoutY="6.0" mnemonicParsing="false" onAction="#logout" text="Log out" />
+      <Label layoutX="291.0" layoutY="14.0" text="Logged in As :" textFill="#ebdddd" />
+      <Label fx:id="UserType" layoutX="413.0" layoutY="14.0" prefHeight="21.0" prefWidth="200.0" textFill="#f2eeee" />
+      <Label layoutX="636.0" layoutY="18.0" text="ID:" textFill="#ebdddd" />
+      <Label fx:id="userId" layoutX="663.0" layoutY="18.0" prefHeight="21.0" prefWidth="200.0" textFill="#f2eeee" />
+   </children>
+</AnchorPane>

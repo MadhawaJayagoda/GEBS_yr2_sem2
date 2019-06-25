@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1050.0" prefWidth="1920.0" style="-fx-background-color: #212F3D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeliveryController">
+   <children>
+      <AnchorPane accessibleRole="IMAGE_VIEW" layoutY="52.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="931.0" prefWidth="258.0" scaleShape="false" style="-fx-background-color: #34495E;">
+         <children>
+            <Button fx:id="homeButton" layoutX="-1.0" layoutY="157.0" mnemonicParsing="false" onAction="#homeScreen" prefHeight="80.0" prefWidth="258.0" text="Home">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutY="237.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="258.0" style="-fx-background-color: #4b5259;" text="Delivery">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f56c2d" height="80.0" layoutX="-2.0" layoutY="477.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+            <ImageView fitHeight="148.0" fitWidth="206.0" layoutX="38.0" layoutY="9.0">
+               <image>
+                  <Image url="@GEBS%20Final%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="505.0" layoutY="153.0" prefHeight="20.0" prefWidth="120.0" />
+      <AnchorPane layoutX="266.0" layoutY="6.0" prefHeight="931.0" prefWidth="1654.0" style="-fx-background-color: #edf1f2;">
+         <children>
+            <Label layoutX="568.0" layoutY="25.0" prefHeight="47.0" prefWidth="479.0" text="Delivery Management">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="664.0" layoutY="156.0" prefHeight="28.0" prefWidth="266.0" text="Add Delivery Details" textFill="#6b5e5e" underline="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Text layoutX="275.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Number :-" wrappingWidth="239.50000348687172">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="277.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Address :-" wrappingWidth="197.00000059604645">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="278.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :-" wrappingWidth="173.99998626112938">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <TextField fx:id="desField" layoutX="547.0" layoutY="412.0" prefHeight="56.0" prefWidth="396.0" style="-fx-border-color: #333300;" />
+            <TextField fx:id="addressField" layoutX="548.0" layoutY="492.0" prefHeight="56.0" prefWidth="394.0" style="-fx-border-color: #333300;" />
+            <Button fx:id="addbutton" layoutX="549.0" layoutY="674.0" mnemonicParsing="false" onAction="#addDelivery" prefHeight="43.0" prefWidth="120.0" style="-fx-background-color: #D1E1E8; -fx-border-color: #DADFE1;" text="Add">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="deletebutton" layoutX="696.0" layoutY="675.0" mnemonicParsing="false" onAction="#deleteDelivery" prefHeight="43.0" prefWidth="111.0" style="-fx-background-color: #D1E1E8; -fx-border-color: #DADFE1;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="updatebutton" layoutX="831.0" layoutY="675.0" mnemonicParsing="false" onAction="#updateDelivery" prefHeight="43.0" prefWidth="111.0" style="-fx-background-color: #D1E1E8; -fx-border-color: #DADFE1;" text="Update">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="277.0" layoutY="338.0" prefHeight="25.0" prefWidth="152.0" text="Item Code :-">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="itemField" layoutX="547.0" layoutY="321.0" prefHeight="56.0" prefWidth="396.0" style="-fx-border-color: #333300;" />
+            <Label fx:id="didLabel" layoutX="700.0" layoutY="243.0" prefHeight="32.0" prefWidth="129.0" text="Delivery ID" textFill="#836969">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tablefield" layoutX="1017.0" layoutY="160.0" onMouseClicked="#tableclick" prefHeight="556.0" prefWidth="521.0" style="-fx-border-color: #333300;">
+              <columns>
+                <TableColumn fx:id="DeliveryNumber" prefWidth="103.0" text="DeliveryNumber" />
+                <TableColumn fx:id="ItemCode" prefWidth="98.0" text="ItemCode" />
+                  <TableColumn fx:id="Description" prefWidth="115.0" text="Description" />
+                  <TableColumn fx:id="Address" prefWidth="117.0" text="Address" />
+                  <TableColumn fx:id="DeliveryDate" prefWidth="86.0" text="DeliveryDate" />
+              </columns>
+            </TableView>
+            <Text layoutX="271.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Delivery Date :-">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <TextField fx:id="deliverydateField" layoutX="548.0" layoutY="578.0" prefHeight="56.0" prefWidth="394.0" style="-fx-border-color: #333300;" />
+            <Button fx:id="deliveryreportButton" layoutX="822.0" layoutY="738.0" mnemonicParsing="false" onAction="#deliveryReport" prefHeight="43.0" prefWidth="129.0" style="-fx-border-color: #DADFE1; -fx-background-color: #D1E1E8;" text="Delivery Report" textFill="#335283">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="searchField" layoutX="1168.0" layoutY="104.0" prefHeight="25.0" prefWidth="283.0" style="-fx-background-color: #A4CAD9;" />
+            <Text layoutX="1017.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Delivery Number" wrappingWidth="142.9999994635582">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="279.0" layoutY="767.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Item Code" wrappingWidth="222.0000093281269">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <TextField fx:id="reportItemcode" layoutX="547.0" layoutY="736.0" prefHeight="43.0" prefWidth="258.0" />
+            <Label layoutX="27.0" layoutY="15.0" text="ID:" />
+            <Label fx:id="userId" layoutX="79.0" layoutY="15.0" prefHeight="21.0" prefWidth="200.0" textFill="#f2eeee" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="777.0" layoutY="1002.0" prefHeight="28.0" prefWidth="482.0" text="General Engineering &amp; Business Services (Pte) Ltd" textFill="#f56c2d">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="1861.0" layoutY="6.0" mnemonicParsing="false" onAction="#ExitWindow" prefHeight="7.0" prefWidth="37.0" text="X" />
+      <Button fx:id="logOutButton" layoutX="1760.0" layoutY="6.0" mnemonicParsing="false" text="Log out" />
+      <Label layoutX="13.0" layoutY="15.0" text="Logged in As :" textFill="#ebdddd" />
+      <Label fx:id="UserType" layoutX="121.0" layoutY="15.0" prefHeight="21.0" prefWidth="200.0" textFill="#f2eeee" />
+   </children>
+</AnchorPane>

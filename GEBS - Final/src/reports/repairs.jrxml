@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="repairs" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="27a0a2a4-86d1-4e10-9c5c-4d3b497ca676">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Repairs Report"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM repairsgebs]]>
+	</queryString>
+	<field name="ItemID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="ItemID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="repairsgebs"/>
+	</field>
+	<field name="ItemType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ItemType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="repairsgebs"/>
+	</field>
+	<field name="Status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="repairsgebs"/>
+	</field>
+	<field name="WarrantyDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="WarrantyDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="repairsgebs"/>
+	</field>
+	<field name="DamageType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DamageType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="repairsgebs"/>
+	</field>
+	<field name="RepairDateCurrent" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="RepairDateCurrent"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="repairsgebs"/>
+	</field>
+	<field name="RepairDateNext" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="RepairDateNext"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="repairsgebs"/>
+	</field>
+	<field name="TotalCost" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="TotalCost"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="repairsgebs"/>
+	</field>
+	<group name="ItemID">
+		<groupExpression><![CDATA[$F{ItemID}]]></groupExpression>
+	</group>
+	<group name="ItemType">
+		<groupExpression><![CDATA[$F{ItemType}]]></groupExpression>
+	</group>
+	<group name="Status">
+		<groupExpression><![CDATA[$F{Status}]]></groupExpression>
+	</group>
+	<group name="WarrantyDate">
+		<groupExpression><![CDATA[$F{WarrantyDate}]]></groupExpression>
+	</group>
+	<group name="DamageType">
+		<groupExpression><![CDATA[$F{DamageType}]]></groupExpression>
+	</group>
+	<group name="RepairDateCurrent">
+		<groupExpression><![CDATA[$F{RepairDateCurrent}]]></groupExpression>
+	</group>
+	<group name="RepairDateNext">
+		<groupExpression><![CDATA[$F{RepairDateNext}]]></groupExpression>
+	</group>
+	<group name="TotalCost">
+		<groupExpression><![CDATA[$F{TotalCost}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<staticText>
+				<reportElement x="170" y="20" width="455" height="52" forecolor="#ED2C28" uuid="83073bbe-c6a0-4a60-832c-e871145925a7"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Repairs Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="800" height="1" uuid="fc0aecd9-de6f-4cf5-a755-facf26fac4d8"/>
+			</line>
+			<image hAlign="Center">
+				<reportElement x="0" y="21" width="140" height="63" uuid="6c26bed2-a2df-43cf-84db-f07ce4f80cab"/>
+				<imageExpression><![CDATA["GEBS Final (1).png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="49" height="30" forecolor="#000000" uuid="ef206cd6-e399-4b0c-a312-921d95e7d4e5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2d54917-db6d-4b94-bb6f-d50342ed2e7b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Item ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="730" y="10" width="49" height="30" forecolor="#000000" uuid="6983b1fa-dbe2-49ad-9f4e-f1d90234bf5f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2d54917-db6d-4b94-bb6f-d50342ed2e7b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cost]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="640" y="10" width="49" height="30" forecolor="#000000" uuid="c35c88d3-8513-4cd9-be03-e9e3f9520453">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2d54917-db6d-4b94-bb6f-d50342ed2e7b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="10" width="100" height="30" forecolor="#000000" uuid="935201bf-9b9a-4d11-a163-31f364e8feaa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2d54917-db6d-4b94-bb6f-d50342ed2e7b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Repair Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="10" width="110" height="30" forecolor="#000000" uuid="775ada8d-0f93-4523-973f-985dd0c1d10a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2d54917-db6d-4b94-bb6f-d50342ed2e7b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Damage Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="10" width="110" height="30" forecolor="#000000" uuid="ab690721-96e6-41d5-be72-75f2fd18aba3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2d54917-db6d-4b94-bb6f-d50342ed2e7b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Warranty Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="10" width="49" height="30" forecolor="#000000" uuid="27557136-4c56-4bdb-99a8-8401fd12b290">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2d54917-db6d-4b94-bb6f-d50342ed2e7b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="10" width="75" height="30" forecolor="#000000" uuid="22b6e6c0-a66b-4dcf-bbf0-7da00f825c6f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2d54917-db6d-4b94-bb6f-d50342ed2e7b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Item Type]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="50" height="34" uuid="e1c73f0d-a3ab-420c-a657-e7ffdf1a0d48"/>
+				<textFieldExpression><![CDATA[$F{ItemID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="63" height="34" uuid="490934ab-1d27-41eb-be5a-eda2b467c14c"/>
+				<textFieldExpression><![CDATA[$F{ItemType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="0" width="50" height="34" uuid="615a90b6-99fa-485f-a7e4-ef266159dbbe"/>
+				<textFieldExpression><![CDATA[$F{Status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="0" width="90" height="34" uuid="2a656310-d8b0-49c5-9f7a-0ebf3a876e0a"/>
+				<textFieldExpression><![CDATA[$F{WarrantyDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="90" height="34" uuid="876ad4a3-14ec-43be-b3df-71390f748110"/>
+				<textFieldExpression><![CDATA[$F{DamageType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="0" width="110" height="34" uuid="8afdf3a5-15d9-4528-8afe-a98c7d0b7865"/>
+				<textFieldExpression><![CDATA[$F{RepairDateCurrent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="650" y="0" width="100" height="34" uuid="e3325028-730e-4264-be74-a8e5eb5e38bc"/>
+				<textFieldExpression><![CDATA[$F{RepairDateNext}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="740" y="0" width="72" height="34" uuid="d65d97eb-c8b7-40d5-9000-52690a3599e5"/>
+				<textFieldExpression><![CDATA[$F{TotalCost}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="75" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="-6" y="18" width="100" height="19" uuid="22966946-6bcf-48c4-8251-89d73306a858"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="150" y="40" width="550" height="30" forecolor="#F56C2D" uuid="e556f5d6-a2a8-471b-a6bf-d86ccc726b57"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[© General Engineering & Business Services (Pte) Ltd]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

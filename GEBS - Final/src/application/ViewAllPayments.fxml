@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1050.0" prefWidth="1920.0" style="-fx-background-color: #212F3D;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewAllPaymentsController">
+   <children>
+      <AnchorPane layoutY="52.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="931.0" prefWidth="258.0" scaleShape="false" style="-fx-background-color: #34495E;">
+         <children>
+            <Button fx:id="homeButton" layoutY="157.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="258.0" text="Home">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutY="237.0" mnemonicParsing="false" onAction="#StockScreen" prefHeight="80.0" prefWidth="258.0" text="Stocks">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutY="317.0" mnemonicParsing="false" onAction="#RepairScreen" prefHeight="80.0" prefWidth="258.0" text="Repairs">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutY="397.0" mnemonicParsing="false" onAction="#EmployeeScreen" prefHeight="80.0" prefWidth="258.0" text="Employee">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutY="477.0" mnemonicParsing="false" onAction="#DeliveryScreen" prefHeight="80.0" prefWidth="258.0" text="Delivery">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutY="557.0" mnemonicParsing="false" onAction="#CustomerOrderScreen" prefHeight="80.0" prefWidth="258.0" text="Customer order">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutY="637.0" mnemonicParsing="false" onAction="#ContractsScreen" prefHeight="80.0" prefWidth="258.0" text="Contracts">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutY="717.0" mnemonicParsing="false" onAction="#FinanceScreen" prefHeight="80.0" prefWidth="258.0" text="Finance">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutY="797.0" mnemonicParsing="false" onAction="#SuppliersScreen" prefHeight="80.0" prefWidth="258.0" style="-fx-background-color: #4b5259;" text="Suppliers">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f56c2d" height="80.0" layoutX="-2.0" layoutY="797.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+            <ImageView fitHeight="148.0" fitWidth="224.0" layoutX="27.0" layoutY="9.0">
+               <image>
+                  <Image url="@../../../../Downloads/GEBS%20Final%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="258.0" layoutY="52.0" prefHeight="931.0" prefWidth="1654.0" style="-fx-background-color: #edf1f2;">
+         <children>
+            <AnchorPane prefHeight="931.0" prefWidth="1654.0">
+               <children>
+                  <Pane prefHeight="76.0" prefWidth="1656.0">
+                     <children>
+                        <Button fx:id="back" layoutX="26.0" layoutY="18.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="68.0" prefWidth="140.0" text="Back">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="44.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@resources/return-button.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="report" layoutX="1363.0" layoutY="13.0" mnemonicParsing="false" onAction="#generateReport" prefHeight="64.0" prefWidth="260.0" style="-fx-border-image-width: 2; -fx-border-color: grey; -fx-border-radius: 5;" text="Generate Report">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <AnchorPane layoutX="15.0" layoutY="92.0" prefHeight="170.0" prefWidth="1625.0" style="-fx-background-color: #FDFEFE; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="170.0" fitWidth="312.0" layoutX="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/GEBS%20Final.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="409.0" layoutY="33.0" prefHeight="106.0" prefWidth="983.0" text="View All Invoices">
+                           <font>
+                              <Font name="System Bold" size="72.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="payroll_table" layoutX="16.0" layoutY="274.0" prefHeight="638.0" prefWidth="1623.0">
+                     <columns>
+                        <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="col_product" prefWidth="164.00015258789062" text="Product" />
+                        <TableColumn fx:id="col_company" prefWidth="187.199951171875" text="Company" />
+                        <TableColumn fx:id="col_supplied_date" prefWidth="278.4000244140625" text="Supplied Date" />
+                        <TableColumn fx:id="col_payment_date" prefWidth="273.5999755859375" text="Payment Date" />
+                        <TableColumn fx:id="col_unitprice" prefWidth="160.0001220703125" text="Unit Price" />
+                        <TableColumn fx:id="col_quantity" prefWidth="116.800048828125" text="Qunatity" />
+                        <TableColumn fx:id="col_total_cost" prefWidth="224.0" text="Total Cost" />
+                        <TableColumn fx:id="col_status" minWidth="0.0" prefWidth="154.39990234375" text="Payment Status" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="777.0" layoutY="1002.0" prefHeight="28.0" prefWidth="482.0" text="General Engineering &amp; Business Services (Pte) Ltd" textFill="#f56c2d">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="1861.0" layoutY="6.0" mnemonicParsing="false" onAction="#ExitWindow" prefHeight="7.0" prefWidth="37.0" text="X" />
+      <Button fx:id="logOutButton" layoutX="1760.0" layoutY="6.0" mnemonicParsing="false" text="Log out" />
+   </children>
+</AnchorPane>

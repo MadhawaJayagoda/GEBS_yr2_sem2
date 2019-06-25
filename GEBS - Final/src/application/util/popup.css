@@ -1,0 +1,14 @@
+.popup {
+	-fx-hgap: 30px;
+    -fx-padding: 30px;
+    -fx-background-color: #696969;
+    -fx-background-radius: 40px;
+    -fx-border-radius: 40px;
+    -fx-border-width: 5px;
+    -fx-border-color: black; 
+    -fx-border-width: 5;
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+    -fx-font-weight : bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}

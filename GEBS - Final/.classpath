@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="controller/EmployeeReportController.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/ASUS/eclipse-workspace/Employee Management/jtds-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASUS/eclipse-workspace/Employee Management/mysql-connector-java-8.0.13.jar"/>
+	<classpathentry kind="con" path="net.sf.jasperreports.JR_CONTAINER"/>
+	<classpathentry kind="con" path="net.sf.jasperreports.JR_DEPENDENCIES_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/asdjo/ecj-4.3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

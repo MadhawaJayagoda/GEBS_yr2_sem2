@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1050.0" prefWidth="1920.0" style="-fx-background-color: #212F3D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RepairsController">
+   <children>
+      <AnchorPane accessibleRole="IMAGE_VIEW" layoutY="52.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="931.0" prefWidth="258.0" scaleShape="false" style="-fx-background-color: #34495E;">
+         <children>
+            <Button fx:id="homeButton" layoutX="-1.0" layoutY="157.0" mnemonicParsing="false" onAction="#homeScreen" prefHeight="85.0" prefWidth="258.0" text="Home" AnchorPane.bottomAnchor="680.0">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="repairsButton" layoutX="1.0" layoutY="251.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="258.0" style="-fx-background-color: #4b5259;" text="Repairs" AnchorPane.bottomAnchor="595.0">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f56c2d" height="80.0" layoutX="-1.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+            <ImageView fitHeight="152.0" fitWidth="221.0" layoutX="23.0" layoutY="4.0">
+               <image>
+                  <Image url="@GEBS%20Final%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="505.0" layoutY="153.0" prefHeight="20.0" prefWidth="120.0" />
+      <AnchorPane layoutX="255.0" layoutY="52.0" prefHeight="931.0" prefWidth="1654.0" style="-fx-background-color: #edf1f2;" AnchorPane.leftAnchor="255.0" AnchorPane.topAnchor="52.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Repair Information:" textAlignment="CENTER" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="260.0">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="REPAIR MANAGEMENT" AnchorPane.leftAnchor="497.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font name="System Bold" size="60.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Item ID:" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="330.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Item Type:" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="400.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" wrappingWidth="79.19999837875366" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="470.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Damage Type(if any):" wrappingWidth="217.60007238388062" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="610.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Warranty Date(if any):" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="540.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Repair Date(if any):" wrappingWidth="217.60005947947502" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="680.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Cost:" wrappingWidth="174.4000047110021" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="750.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="repStatus" prefHeight="10.0" prefWidth="400.0" AnchorPane.leftAnchor="654.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="470.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Next:" wrappingWidth="57.599972784519196" AnchorPane.rightAnchor="650.0" AnchorPane.topAnchor="680.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="repWarDate" prefWidth="200.0" AnchorPane.leftAnchor="654.0" AnchorPane.topAnchor="540.0" />
+            <TextArea fx:id="repDamType" prefHeight="10.0" prefWidth="400.0" AnchorPane.leftAnchor="654.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="610.0" />
+            <DatePicker fx:id="repRepDate" prefHeight="26.0" prefWidth="200.0" AnchorPane.leftAnchor="654.0" AnchorPane.topAnchor="680.0" />
+            <TextArea fx:id="repCost" prefHeight="10.0" prefWidth="400.0" AnchorPane.leftAnchor="654.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="750.0" />
+            <DatePicker fx:id="repRepNext" prefWidth="200.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="680.0" />
+            <Button fx:id="repInsConfirm" mnemonicParsing="false" onAction="#submitRepair" prefHeight="50.0" prefWidth="110.0" text="Confirm" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="400.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="repInsSearch" defaultButton="true" layoutX="1281.0" layoutY="82.0" mnemonicParsing="false" onAction="#repInsSearch" prefHeight="50.0" prefWidth="100.0" text="Search" textAlignment="CENTER" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="repInsView" defaultButton="true" layoutX="1336.0" layoutY="63.0" mnemonicParsing="false" onAction="#repViewScreen" prefHeight="50.0" prefWidth="100.0" text="View" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="repItemID1" layoutX="10.0" layoutY="10.0" prefHeight="10.0" prefWidth="400.0" promptText="eg: Bought item = Buy, Sold item = Sell, Repaired item = Repair" AnchorPane.leftAnchor="654.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="400.0" />
+            <TextArea fx:id="repItemID" layoutX="10.0" layoutY="10.0" prefHeight="10.0" prefWidth="400.0" AnchorPane.leftAnchor="654.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="330.0" />
+            <Button fx:id="demoButton" layoutX="637.0" layoutY="831.0" mnemonicParsing="false" onAction="#demo" prefHeight="50.0" prefWidth="110.0" text="Demo">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Label layoutX="777.0" layoutY="1002.0" prefHeight="28.0" prefWidth="482.0" text="General Engineering &amp; Business Services (Pte) Ltd" textFill="#f56c2d">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="1861.0" layoutY="6.0" mnemonicParsing="false" onAction="#ExitWindow" prefHeight="7.0" prefWidth="37.0" text="X" />
+      <Button fx:id="logOutButton" layoutX="1760.0" layoutY="6.0" mnemonicParsing="false" onAction="#Logout" text="Log out" />
+      <Label layoutX="245.0" layoutY="26.0" text="Logged in As :" textFill="#ebdddd" />
+      <Label fx:id="UserType" layoutX="367.0" layoutY="26.0" prefHeight="21.0" prefWidth="200.0" textFill="#f2eeee" />
+      <Label layoutX="584.0" layoutY="26.0" text="ID:" textFill="#ebdddd" />
+      <Label fx:id="userId" layoutX="611.0" layoutY="26.0" prefHeight="21.0" prefWidth="200.0" textFill="#f2eeee" />
+   </children>
+</AnchorPane>

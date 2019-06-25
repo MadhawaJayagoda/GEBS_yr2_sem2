@@ -1,0 +1,60 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#header {
+	-fx-background-color: #DAA520;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+	-fx-font-family: 'sans-serif';
+	-fx-padding: 6 6 6 6;
+	-fx-background-radius: 10;
+	-fx-border-color: #b8860b;
+	-fx-border-width: 5px 15px 5px 15px;
+}
+
+.root{
+	-fx-background-image: url("resources/background2.jpg");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: cover, auto;
+}
+
+#search_supplier{
+	-fx-border-color: #696969;
+	-fx-border-radius: 5px 5px 5px 5px;
+	-fx-border-width: 2.5px 2.5px 2.5px 2.5px;
+}
+
+#add_supplier{
+	-fx-border-color: #696969;
+	-fx-border-radius: 5px 5px 5px 5px;
+	-fx-border-width: 2.5px 2.5px 2.5px 2.5px;
+}
+
+#delete_supplier{
+	-fx-border-color: #696969;
+	-fx-border-radius: 5px 5px 5px 5px;
+	-fx-border-width: 2.5px 2.5px 2.5px 2.5px;
+}
+
+#update_supplier{
+	-fx-border-color: #696969;
+	-fx-border-radius: 5px 5px 5px 5px;
+	-fx-border-width: 2.5px 2.5px 2.5px 2.5px;
+}
+
+#viewAll_supplier{
+	-fx-border-color: #696969;
+	-fx-border-radius: 5px 5px 5px 5px;
+	-fx-border-width: 2.5px 2.5px 2.5px 2.5px;
+}
+
+#payroll_supplier{
+	-fx-border-color: #696969;
+	-fx-border-radius: 5px 5px 5px 5px;
+	-fx-border-width: 2.5px 2.5px 2.5px 2.5px;
+}
+
+#home{
+	-fx-border-color: #696969;
+	-fx-border-radius: 5px 5px 5px 5px;
+	-fx-border-width: 2.5px 2.5px 2.5px 2.5px;
+}
